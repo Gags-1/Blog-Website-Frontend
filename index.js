@@ -28,5 +28,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.getElementById("admin-login-btn").addEventListener('click', function(e){
-    window.location.href = 'admin_panel.html';
+    window.location.href = 'login.html';
 })
