@@ -6,7 +6,7 @@ function login() {
     formData.append('username', username);
     formData.append('password', password);
 
-    fetch('https://blog-website-backend-riya.onrender.com/login', {
+    fetch('https://blog-website-backend-ei3q.onrender.com/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-    fetch('https://blog-website-backend-riya.onrender.com/posts')
+    fetch('https://blog-website-backend-ei3q.onrender.com/posts')
         .then(response => response.json())
         .then(posts => {
             posts.forEach(post => {
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function deletePost(event) {
     const postId = event.target.getAttribute('data-id');
     if (confirm('Are you sure you want to delete this post?')) {
-        fetch(`https://blog-website-backend-riya.onrender.com/admin/posts/${postId}`, {
+        fetch(`https://blog-website-backend-ei3q.onrender.com/admin/posts/${postId}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('token')}`

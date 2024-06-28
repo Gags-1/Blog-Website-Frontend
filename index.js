@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const postsContainer = document.getElementById('posts');
 
-    fetch('https://blog-website-backend-riya.onrender.com/posts')
+    fetch('https://blog-website-backend-ei3q.onrender.com/posts')
         .then(response => response.json())
         .then(posts => {
             posts.forEach(post => {

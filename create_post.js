@@ -4,7 +4,7 @@ document.getElementById('create-post-form').addEventListener('submit', function(
     const title = document.getElementById('title').value;
     const body = document.getElementById('body').value;
 
-    fetch('https://blog-website-backend-riya.onrender.com/admin/posts', {
+    fetch('https://blog-website-backend-ei3q.onrender.com/admin/posts', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
